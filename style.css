@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+
+/* Section 1 */
+
+.container {
+    padding: 35px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.heading-title-1 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+    font-size: 25px;
+    text-align: center;
+}
+
+.heading-title-2 {
+    color: hsl(234, 12%, 34%);
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.heading-paragraph p {
+    margin-top: 20px;
+    color: hsl(229, 6%, 66%);
+    text-align: justify;
+    padding: 5px;
+    margin-bottom: 70px;
+}
+
+.card {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 25px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 15px 29px hsla(229, 6%, 66%, 0.4);
+    ;
+}
+
+.card-1 .card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: hsl(180, 62%, 55%);
+    top: 0;
+    left: 0;
+}
+
+.card.card-1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: hsl(0, 78%, 62%);
+    top: 0;
+    left: 0;
+}
+
+.card.card-2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: hsl(34, 97%, 64%);
+    top: 0;
+    left: 0;
+}
+
+.card-3 .card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: hsl(212, 86%, 64%);
+    top: 0;
+    left: 0;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 21px;
+    color: hsl(234, 12%, 34%);
+}
+
+.card-content {
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+}
+
+.card-img {
+    width: 30%;
+    align-self: flex-end;
+    margin-top: 30px;
+}
+
+@media (min-width: 900px) {
+    body {
+        padding: 50px;
+    }
+    .section-1 {
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .heading-paragraph p {
+        width: 495px;
+        text-align: center;
+    }
+    .card-img {
+        width: 20%;
+    }
+    .card-2 {
+        align-items: center;
+    }
+    .card.card-1 {
+        margin: 0;
+    }
+    .card {
+        width: 300px;
+    }
+}
